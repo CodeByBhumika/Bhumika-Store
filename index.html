@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add to Cart | HTML • CSS • JavaScript</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Bhumika Store</h1>
+      </div>
+      <form class="search" onsubmit="event.preventDefault();">
+        <input id="search" placeholder="Search products..." />
+        <button type="button" id="clearSearch">Clear</button>
+      </form>
+      <button class="cart-btn" id="openCart" aria-label="Open cart">
+        <span>Cart</span>
+        <span class="badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div id="products" class="grid"></div>
+  </main>
+
+  <!-- Cart Drawer -->
+  <aside class="drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
+    <header class="nav">
+      <h3>Shopping Cart</h3>
+      <button class="close" id="closeCart" aria-label="Close cart">✕</button>
+    </header>
+    <div class="cart-list" id="cartList"></div>
+    <footer>
+      <div class="summary">
+        <span>Total (<span id="itemTotal">0</span> items)</span>
+        <span id="grandTotal">₹0.00</span>
+      </div>
+      <div class="cta">
+        <button class="btn clear" id="clearCart">Clear</button>
+        <button class="btn checkout">Checkout</button>
+      </div>
+    </footer>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
