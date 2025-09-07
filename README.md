@@ -24,8 +24,7 @@ A stylish and minimal e-commerce front-end built with HTML, CSS, and JavaScript.
 ---
 
 ## 📸 Preview
-![Bhumika Store Preview](preview.png)  
-![Bhumika Store Preview - Cart](preview_cart.png)  
+![Bhumika Store Preview](preview.png)   
 
 > _"Because shopping should always feel this easy!"_  
 
